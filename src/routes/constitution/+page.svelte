@@ -295,10 +295,10 @@
     <p>League payout is structured as follows:</p>
     <ul>
         <li>1st place: $350</li>
-        <li>2nd place: }$175</li>
+        <li>2nd place: $175</li>
         <li>3rd place: $90</li>
-		<li>Weekly Top Score: $10</li>
-		<li>Weekly Challenges: $10</li>
+	<li>Weekly Top Score: $10</li>
+	<li>Weekly Challenges: $10</li>
     </ul>
     <p>In the event that a manager was fined due to late payment, their extra fee will be added to the winner's payout. Similarly, if new managers come into the league and the payout is smaller, the difference will come out of the winner's prize.</p>
 	<p>If a manager quits the league mid-year, their dues are forfeit and any payout up to that point will go to the sidepot.</p>
