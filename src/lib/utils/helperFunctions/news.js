@@ -41,49 +41,49 @@ const getFeed = async (feed, callback) => {
 	}
 }
 
-const processReddit = (rawArticles) => {
-	const bannedAuthors = [
-		"AutoModerator",
-		"FFBot",
-		"Brookskbrothers",
-		"FTAKJ"
-	]
-	const bannedIcons = [
-		"",
-		"self",
-		"thumbnail",
-		"default",
-	]
-	let finalArticles = [];
-	const children = rawArticles.children;
-	for(const rawArticle of children) {
-		const data = rawArticle.data;
-		if(bannedAuthors.includes(data.author)) {
-			continue;
-		}
-		const ts = data.created_utc * 1000;
-		const d = new Date(ts);
-		const icon = !bannedIcons.includes(data.thumbnail) ? data.thumbnail : `newsIcons/${data.subreddit}.png`;
-		const date = stringDate(d);
-		let article = `<a href="${data.url}" class="body-link">${data.url}</a>`;
-		if(data.selftext_html) {
-			article = decodeHTML(data.selftext_html);
-		}
-		if(data.secure_media_embed?.content) {
-			decodeHTML(data.secure_media_embed.content)
-		 }
-		finalArticles.push({
-			title: data.title,
-			article,
-			link: `https://www.reddit.com${data.permalink}`,
-			author: `${data.subreddit_name_prefixed} - u/${data.author}`,
-			ts,
-			date,
-			icon,
-		});
-	}
-	return finalArticles;
-}
+// const processReddit = (rawArticles) => {
+// 	const bannedAuthors = [
+// 		"AutoModerator",
+// 		"FFBot",
+// 		"Brookskbrothers",
+// 		"FTAKJ"
+// 	]
+// 	const bannedIcons = [
+// 		"",
+// 		"self",
+// 		"thumbnail",
+// 		"default",
+// 	]
+// 	let finalArticles = [];
+// 	const children = rawArticles.children;
+// 	for(const rawArticle of children) {
+// 		const data = rawArticle.data;
+// 		if(bannedAuthors.includes(data.author)) {
+// 			continue;
+// 		}
+// 		const ts = data.created_utc * 1000;
+// 		const d = new Date(ts);
+// 		const icon = !bannedIcons.includes(data.thumbnail) ? data.thumbnail : `newsIcons/${data.subreddit}.png`;
+// 		const date = stringDate(d);
+// 		let article = `<a href="${data.url}" class="body-link">${data.url}</a>`;
+// 		if(data.selftext_html) {
+// 			article = decodeHTML(data.selftext_html);
+// 		}
+// 		if(data.secure_media_embed?.content) {
+// 			decodeHTML(data.secure_media_embed.content)
+// 		 }
+// 		finalArticles.push({
+// 			title: data.title,
+// 			article,
+// 			link: `https://www.reddit.com${data.permalink}`,
+// 			author: `${data.subreddit_name_prefixed} - u/${data.author}`,
+// 			ts,
+// 			date,
+// 			icon,
+// 		});
+// 	}
+// 	return finalArticles;
+// }
 
 var htmlEntities = {
     nbsp: ' ',
