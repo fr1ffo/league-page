@@ -7,7 +7,8 @@ export const enableBlog = false; // requires VITE_CONTENTFUL_ACCESS_TOKEN and VI
 
 /*   STEP 2   */
 export const homepageText = `
-  <p>Welcome to Cross Country Dynasty, where the rules are made up and the points don't matter.</p>
+  <p>Welcome to Cross Country Dynasty, a dynasty league with members on each side of the country. Established in 2020, there has been a new champion every year.</p>
+  <p>Link to the accounting page: <a href="https://docs.google.com/spreadsheets/d/139VHysO-oCtVZNo144PEfEFsnMvrn7nx41PZDC19UKc/edit?usp=sharing" target="_blank"> Accounting and Payouts</p>
   
 `;
 
