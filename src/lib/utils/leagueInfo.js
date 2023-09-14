@@ -48,9 +48,9 @@ export const managers = [
       "name": "Ashley",
       "managerID":"77924168087519232",
       "location": "Oregon", // (optional)
-      "bio": "Lorem ipsum...",
+      "bio": "In the realm of fantasy football, there emerged a manager of unparalleled strategy and unwavering determination, known far and wide as Lady Smashley of the Gridiron. Born to humble beginnings in a quaint village, Smashley's destiny was forever altered when she discovered the mystical scrolls of Fantasy Football Mastery at the age of ten. From that moment forward, Smashley devoted herself to the art of fantasy football. She honed her skills through tireless research, poring over player statistics and studying the arcane rituals of drafting and trading. Her passion for the game burned brighter than a dragon's breath, and her dreams were filled with visions of championship glory. As she matured, Lady Smashley's prowess on the fantasy battlefield became legendary. She formed a fellowship of loyal companions, each a master in their own right, to assist her in her quest for victory. Together, they ventured into the treacherous realms of waiver wire and trade negotiations, facing down challenges and rivals with the courage of knights. Year after year, Lady Smashley's name became synonymous with fantasy football excellence. She claimed multiple league titles, her astute decisions bringing glory to her kingdom. But it was not just about winning; it was about the thrill of the game, the camaraderie with fellow managers, and the shared passion for the sport. As the seasons rolled on, Lady Smashley's reputation grew to mythical proportions. Her wisdom was sought by lords and nobles from across the land, and she was often called upon to dispense her sage advice on podcasts and in the hallowed pages of fantasy football almanacs. Yet, even in the face of such fame, Lady Smashley remained humble, never forgetting her roots. She mentored young aspiring managers, passing down her knowledge to ensure that the legacy of fantasy football excellence would endure for generations to come. Lady Smashley of the Gridiron now stands as a symbol of unwavering dedication and unparalleled skill in the world of fantasy sports, a true legend whose name will be whispered in awe by managers for eons to come.",
       "photo": "/managers/question.jpg", // square ratio recommended (no larger than 500x500)
-      "fantasyStart": 2014, // (optional) when did the manager start playing fantasy football
+      "fantasyStart": 2010, // (optional) when did the manager start playing fantasy football
       "favoriteTeam": "ne", // (optional) favorite NFL team, (follows convention: nyj, sea, mia, etc.) MUST BE LOWERCASE
       "mode": "Win Now", // (optional) 'Win Now', 'Dynasty', or 'Rebuild' (anything else and you will need to add a new png to /static/ similar to the 'Rebuild.png' and 'Win Now.png' currently in there)
       "rival": {
@@ -59,10 +59,10 @@ export const managers = [
         image: "/managers/question.jpg", // either a specific manager photo or '/managers/everyone.png' or '/managers/question.png'
       },
       "favoritePlayer": null, // (optional) this corresponds to the Sleeper player ID (https://api.sleeper.app/v1/players/nfl)
-      "valuePosition": "WR", // (optional) Favorite position (QB, WR, RB, TE, etc.)
-      "rookieOrVets": "Rookies", // (optional) 'Rookies' or 'Vets' (anything else and you will need to add a new png to /static/ similar to the 'Rookies.png' and 'Vets.png' currently in there)
-      "philosophy": "Your fantasy team's philosophy",
-      "tradingScale": 10, // 1 - 10
+      "valuePosition": "RB", // (optional) Favorite position (QB, WR, RB, TE, etc.)
+      "rookieOrVets": "Vets", // (optional) 'Rookies' or 'Vets' (anything else and you will need to add a new png to /static/ similar to the 'Rookies.png' and 'Vets.png' currently in there)
+      "philosophy": "One Time.",
+      "tradingScale": 7, // 1 - 10
       "preferredContact": "Sleeper", // 'Text', 'WhatsApp', 'Sleeper', 'Email', 'Phone', 'Discord', and 'Carrier Pigeon' are currently supplied in the template
     },
     {
@@ -135,7 +135,7 @@ export const managers = [
       "roster": 6,  // ID of the roster that the manager manages (look at the order of the power rankings graph)
       "name": "Brandon",
       "managerID":"694223963382972416",
-      "tookOver": 2021, // (optional) used if a manager took over a team, delete this line or change to null otherwise
+      "tookOver": null, // (optional) used if a manager took over a team, delete this line or change to null otherwise
       "location": "Oregon", // (optional)
       "bio": "Lorem ipsum...",
       "photo": "/managers/question.jpg", // square ratio recommended (no larger than 500x500)
@@ -224,23 +224,23 @@ export const managers = [
       "roster": 10,  // ID of the roster that the manager manages (look at the order of the power rankings graph)
       "name": "Ben",
       "managerID":"937805023411527680",
-      "tookOver": 2023, // (optional) used if a manager took over a team, delete this line or change to null otherwise
+      "tookOver": null, // (optional) used if a manager took over a team, delete this line or change to null otherwise
       "location": "Oregon", // (optional)
-      "bio": "Lorem ipsum...",
-      "photo": "/managers/question.jpg", // square ratio recommended (no larger than 500x500)
+      "bio": "Name is Ben. New to this league.",
+      "photo": "/managers/ben.jpg", // square ratio recommended (no larger than 500x500)
       "fantasyStart": 2014, // (optional) when did the manager start playing fantasy football
       "favoriteTeam": "min", // (optional) favorite NFL team, (follows convention: nyj, sea, mia, etc.) MUST BE LOWERCASE
       "mode": "Win Now", // (optional) 'Win Now', 'Dynasty', or 'Rebuild' (anything else and you will need to add a new png to /static/ similar to the 'Rebuild.png' and 'Win Now.png' currently in there)
       "rival": {
-        name: "Karlo", // Can be anything (usually your rival's name)
-        link: 3, // manager array number within this array, or null to link back to all managers page
+        name: "Kubu", // Can be anything (usually your rival's name)
+        link: 6, // manager array number within this array, or null to link back to all managers page
         image: "/managers/question.jpg", // either a specific manager photo or '/managers/everyone.png' or '/managers/question.png'
       },
-      "favoritePlayer": null, // (optional) this corresponds to the Sleeper player ID (https://api.sleeper.app/v1/players/nfl)
+      "favoritePlayer": 6794, // (optional) this corresponds to the Sleeper player ID (https://api.sleeper.app/v1/players/nfl)
       "valuePosition": "WR", // (optional) Favorite position (QB, WR, RB, TE, etc.)
-      "rookieOrVets": "Rookies", // (optional) 'Rookies' or 'Vets' (anything else and you will need to add a new png to /static/ similar to the 'Rookies.png' and 'Vets.png' currently in there)
-      "philosophy": "Your fantasy team's philosophy",
-      "tradingScale": 10, // 1 - 10
+      "rookieOrVets": "Vets", // (optional) 'Rookies' or 'Vets' (anything else and you will need to add a new png to /static/ similar to the 'Rookies.png' and 'Vets.png' currently in there)
+      "philosophy": "To Beat Kubu and Frost.",
+      "tradingScale": 5, // 1 - 10
       "preferredContact": "Sleeper", // 'Text', 'WhatsApp', 'Sleeper', 'Email', 'Phone', 'Discord', and 'Carrier Pigeon' are currently supplied in the template
     },
   ]
